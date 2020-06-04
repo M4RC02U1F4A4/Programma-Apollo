@@ -1,0 +1,128 @@
+body {
+  background-image: url(pattern_principale.jpg);
+  background-attachment: fixed;
+}
+
+.nav-item {
+  padding-left: 40px;
+}
+
+#rocket {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+#home_foto {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption {
+	padding-bottom: 100px;
+}
+
+#testo_home {
+  color: white;
+  font-family: monospace;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+#icona_home {
+  height: 50px;
+  width: 50px;
+}
+
+#link {
+  color: white;
+}
+
+#info {
+  padding-top: 75px;
+}
+
+#img_info {
+  width: 250px;
+  height: 250px;
+}
+
+#testo_info {
+  padding-top: 60px;
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+@media only screen and (min-width: 960px) {
+    #missioni {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+}
+
+#testo_missioni {
+  padding-top: 60px;
+  color: white;
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.col-lg-3 {
+  padding-top: 75px;
+  padding-bottom: 25px;
+}
+
+#spazio {
+  height: 80px;
+}
+
+
+/*---------------------modal-----------------------*/
+
+#img_stemma {
+  width: 100%;
+  height: auto;
+}
+
+#modal_title {
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#modal_titolo {
+  color: black;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+#modal_testo {
+  color: black;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#riga_1_destra {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

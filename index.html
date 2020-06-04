@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126563035-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126563035-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Programma Apollo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body data-spy="scroll" data-target="#menu">
+<!-- menu di navigazione -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black py-0">
+    <a class="navbar-brand" id="link"><img id="rocket" src="rocket.svg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" id="link" data-toggle="modal" data-target="#conferma_nasa">NASA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#info">Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#missioni">Missioni</a>
+        </li>
+    </div>
+  </nav>
+<!-- carousel immagini spazio -->
+<div class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <a href="#info"><img src="arrow-down-sign-to-navigate.svg" id="icona_home"></a>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div id="home_foto" class="carousel-item active" style="background-image: url('home.jpg')">
+      <div class="carousel-caption">
+        <h3 id="testo_home">Programma Apollo</h3>
+        <h2 id="testo_home">1961 – 1975</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- conferma nasa -->
+<div class="modal fade conferma_nasa" tabindex="-1" role="dialog" aria-labelledby="conferma_nasa" aria-hidden="true" id="conferma_nasa">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Attenzione!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Stai per accedere ad un sito esterno. Vuoi procedere?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+        <input type="button" class="btn btn-dark" value="Continua" onclick="location.href = 'https://www.nasa.gov/';">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- descrizione missione -->
+<div class="container-fluid" id="sito">
+  <div class="row"  id="info">
+    <div class="col-md-4 offset-md-4">
+      <center><img src="apollo.png" id="img_info"></center>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <p id="testo_info">
+        Il programma Apollo fu un programma spaziale americano che porto' allo sbarco dei primi uomini sulla Luna. Concepito durante la presidenza di Dwight Eisenhower e condotto dalla NASA, Apollo inizio' veramente dopo che il presidente John Kennedy dichiaro', durante una sessione congiunta al Congresso avvenuta il 25 maggio 1961, obiettivo nazionale il far "atterrare un uomo sulla Luna" entro la fine del decennio. Questo obiettivo fu raggiunto durante la missione Apollo 11 quando, il 20 luglio 1969, gli astronauti Neil Armstrong e Buzz Aldrin sbarcarono sulla Luna, mentre Michael Collins rimase in orbita lunare. Apollo 11 fu seguita da ulteriori sei missioni, l'ultima nel dicembre 1972, che portarono un totale di dodici uomini a camminare sul nostro "satellite naturale". Il programma Apollo si svolse tra il 1961 e il 1975 e fu il terzo programma spaziale di voli umani, sviluppato dall'agenzia spaziale civile degli Stati Uniti. Il programma utilizzo' la navicella spaziale Apollo e il razzo vettore Saturn. Questi programmi successivi sono spesso considerati facenti parte delle missioni Apollo. Il corso del programma subi' due lunghe sospensioni: la prima dopo che un incendio sulla rampa di lancio di Apollo 1, durante una simulazione, causo' la morte degli astronauti Gus Grissom, Edward White e Roger Chaffee; la seconda dopo che, durante il viaggio verso la Luna di Apollo 13, si verifico' un'esplosione sul modulo di servizio che impedi' agli astronauti la discesa sul nostro satellite e li costrinse ad un rischioso rientro sulla Terra, avvenuto grazie alle loro competenze e agli sforzi di controllori di volo, tecnici e membri degli equipaggi di riserva. L'Apollo segno' alcune pietre miliari nella storia del volo spaziale umano che fino ad allora si era limitato a missioni in orbita terrestre bassa. Il programma stimolo' progressi in molti settori delle scienze e delle tecnologie, tra cui avionica, informatica e telecomunicazioni.
+      </p>
+    </div>
+  </div>
+
+  <div class="row"  id="missioni">
+    <div class="col-md-6 offset-md-3">
+      <center><h3 id="testo_missioni" >Voli con equipaggio</h3></center>
+    </div>
+  </div>
+
+  <div class="row" id="missioni">
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/1/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 1</h4>
+          <p class="card-text">21 febbraio 1967</p>
+          <p class="card-text">Virgil Grissom - Edward White - Roger Chaffee</p>
+          <a id="link" href="#apollo1" class="btn btn-primary" data-toggle="modal" data-target="#apollo1">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/7/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 7</h4>
+          <p class="card-text">11 ottobre 1968</p>
+          <p class="card-text">Walter Schirra - Donn Eisele - Walter Cunningham</p>
+          <a id="link" href="#apollo7" class="btn btn-primary" data-toggle="modal" data-target="#apollo7">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/8/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 8</h4>
+          <p class="card-text">21 dicembre 1968</p>
+          <p class="card-text">Frank Borman - Jim Lovell - William Anders</p>
+          <a id="link" href="#apollo8" class="btn btn-primary" data-toggle="modal" data-target="#apollo8">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/9/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 9</h4>
+          <p class="card-text">3 marzo 1969</p>
+          <p class="card-text">James McDivitt - David Scott - Russell Schweickart</p>
+          <a id="link" href="#apollo9" class="btn btn-primary" data-toggle="modal" data-target="#apollo9">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="missioni" >
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/10/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 10</h4>
+          <p class="card-text">18 maggio 1969</p>
+          <p class="card-text">Thomas Stafford - John Young - Eugene Cernan</p>
+          <a id="link" href="#apollo10" class="btn btn-primary" data-toggle="modal" data-target="#apollo10">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/11/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 11</h4>
+          <p class="card-text">16 luglio 1969</p>
+          <p class="card-text">Neil Armstrong - Michael Collins - Edwin Aldrin</p>
+          <a id="link" href="#apollo11" class="btn btn-primary" data-toggle="modal" data-target="#apollo11">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/12/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 12</h4>
+          <p class="card-text">14 novembre 1969</p>
+          <p class="card-text">Charles Conrad - Richard Gordon - Alan Bean</p>
+          <a id="link" href="#apollo12" class="btn btn-primary" data-toggle="modal" data-target="#apollo12">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/13/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 13</h4>
+          <p class="card-text">11 aprile 1970</p>
+          <p class="card-text">Jim Lovell - Jack Swigert - Fred Haisebr <br></p>
+          <a id="link" href="#apollo13" class="btn btn-primary" data-toggle="modal" data-target="#apollo13">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="missioni" >
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/14/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 14</h4>
+          <p class="card-text">31 gennaio 1971</p>
+          <p class="card-text">Alan Shepard - Stuart Roosa - Edgar Mitchell</p>
+          <a id="link" href="#apollo14" class="btn btn-primary" data-toggle="modal" data-target="#apollo14">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/15/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 15</h4>
+          <p class="card-text">26 luglio 1971</p>
+          <p class="card-text">David Scott - Alfred Worden - James Irwin</p>
+          <a id="link" href="#apollo15" class="btn btn-primary" data-toggle="modal" data-target="#apollo15">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/16/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 16</h4>
+          <p class="card-text">16 aprile 1972</p>
+          <p class="card-text">John Young - Ken Mattingly - Charles Duke</p>
+          <a id="link" href="#apollo16" class="btn btn-primary" data-toggle="modal" data-target="#apollo16">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/17/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 17</h4>
+          <p class="card-text">7 dicembre 1972</p>
+          <p class="card-text">Eugene Cernan - Ronald Evans - Harrison Schmitt</p>
+          <a id="link" href="#apollo17" class="btn btn-primary" data-toggle="modal" data-target="#apollo17">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row"  id="missioni">
+    <div class="col-md-6 offset-md-3">
+      <center><h3 id="testo_missioni" >Voli senza equipaggio</h3></center>
+    </div>
+  </div>
+
+  <div class="row" id="missioni">
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/4/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 4</h4>
+          <p class="card-text">9 novembre 1967</p>
+          <a id="link" href="#apollo4" class="btn btn-primary" data-toggle="modal" data-target="#apollo4">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/5/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 5</h4>
+          <p class="card-text">22 gennaio 1968</p>
+          <a id="link" href="#apollo5" class="btn btn-primary" data-toggle="modal" data-target="#apollo5">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="card" style="width: 100%;">
+        <img class="card-img-top" src="apollo/6/equipaggio.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Apollo 6</h4>
+          <p class="card-text">4 aprile 1968</p>
+          <a id="link" href="#apollo6" class="btn btn-primary" data-toggle="modal" data-target="#apollo6">Più informazioni...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- modal per le missioni -->
+<!-- APOLLO 1 -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-012</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-012</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn IB SA-204</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center LC 34</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>21 febbraio 1967</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>7 marzo 1967</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/1/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 1 e’ il nome dato alla navicella Apollo/Saturn 204 (AS-204) dopo che fu distrutta dal fuoco in un’esercitazione il 27 gennaio 1967, al Pad 34 in cima al razzo Saturno IB. Il suo equipaggio, i cui rappresentanti morirono tutti nell’incidente, era composto dagli astronauti selezionati per iniziare il programma Apollo: il pilota comandante Virgil I. Grissom, il pilota maggiore Edward H. White e il pilota Roger B. Chaffee. </p>
+            <p id="modal_titolo">La missione</p>
+            <p id="modal_testo">AS-204 doveva essere il primo volo di prova con equipaggio di un Modulo di Comando e Servizio (CSM) in orbita intorno la Terra e lanciato su un razzo Saturn IB. Gli obiettivi dell’AS -204 sono stati quelli di verificare e testare le operazioni di lancio, le telemetrie a terra e possibilita’ di controllo generali. </p>
+            <p id="modal_titolo">L'incidente</p>
+            <p id="modal_testo">Immediatamente prima dell’incidente, l’equipaggio stava adagiandosi nei rispettivi sedili orizzontali e completando la checklist, mentre un problema relativo al sistema di comunicazione era stato riparato. Improvvisamente, una voce gridò "Fire, I smell fire" cioe’ "Fuoco, sento odor di fuoco". La trasmissione si concluse con un grido di dolore. L’equipaggio non ebbe la possibilita’ di fuggire, dato che il portello con apertura interna poteva aprirsi solo con la capsula non pressurizzata. Nel migliore dei casi sarebbero occorsi almeno 90 secondi per aprirla, mentre l’equipaggio morì in appena 15 secondi. Si ritiene che il fuoco abbia avuto origine da una scintilla in qualche parte degli oltre 50 km di cavi ed abbia avuto una combustione molto accelerata per l’atmosfera d’ossigeno pressurizzata presente nella capsula. La Commissione d’esame sul disastro determinò che la causa fu un filo di rame privato del suo isolamento dalla continua apertura e chiusura di un portello che interferiva con esso. Sembra inoltre che questo filo fosse vicino a una giunzione di una linea di raffreddamento che stava espellendo dei vapori altamente infiammabili. La compagnia che produsse il modulo di comando, la North American Aviation, aveva originariamente suggerito un portellone in grado di aprirsi in caso di emergenza grazie a dei bulloni esplosivi. Aveva inoltre proposto un’atmosfera composta da una miscela di ossigeno e azoto, come quella terrestre, utilizzata anche dai sovietici nel contemporaneo programma Sojuz. La NASA non fu d’accordo, giustificandosi dicendo che un portellone così concepito si sarebbe potuto aprire accidentalmente, e l’atmosfera di ossigeno puro (gia’ utilizzata per i programmi Gemini e Mercury) non dava problemi e si sarebbe usata anche per l’Apollo. La NASA aveva chiamato la missione "AS-204", nome che rimase dato che il volo non si era svolto. Dopo l’incendio, su richiesta delle vedove degli astronauti (in particolare quella di Grissom), venne ridenominata Apollo 1, in memoria del volo che gli astronauti avrebbero dovuto svolgere e non fecero mai. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  7-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo7">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 7</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-101</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-101</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn IB SA-205</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>Cape Canaveral Air Force Station LC 34</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>11 ottobre 1968</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>22 ottobre 1968</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/7/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 7 fu la prima missione con equipaggio nel programma Apollo ad essere lanciata dopo il tragico incidente dell'Apollo 1. Fu una missione orbitale di undici giorni, il primo lancio con equipaggio del veicolo di lancio Saturn IB, e la prima missione spaziale americana con tre uomini. </p>
+            <p id="modal_titolo">La missione</p>
+            <p id="modal_testo">Il lancio avvenne da Cape Canaveral l'11 ottobre 1968 alle ore 15.02 UTC in condizioni di vento relativamente forte. Il razzo vettore Saturn IB operò perfettamente pertanto, dopo circa 10 minuti, la navicella spaziale entrò nell'orbita intorno alla Terra. Venne raggiunto un perigeo di 227 chilometri ed un apogeo di 285 chilometri. Trascorse alcune ore la navicella si staccò dal secondo stadio del razzo vettore, si girò, ed esegui la manovra rendezvous. Per la prima volta nella storia dell'esplorazione spaziale da parte degli Stati Uniti, gli astronauti ebbero a bordo una telecamera. Già in precedenti occasioni venne avanzata tale intenzione, però sempre cancellata dai piani di volo a causa di problemi di peso. Navicelle spaziali sovietiche già in precedenti occasioni avevano avuto a bordo delle telecamere; la missione Apollo 7 comunque significò la prima trasmissione in diretta di immagini dallo spazio. Durante la missione il congegno di propulsione della navicella spaziale venne acceso per ben otto volte; pure la durata di tali accensioni variò da un minimo di mezzo secondo fino ad un massimo di dodici minuti. Ovviamente tali manovre comportarono dei cambi di traiettoria nell'orbita terrestre e si raggiunse un'altitudine massima di 452 chilometri; tutte queste operazioni riuscirono perfettamente. Già il primo giorno di volo Schirra prese il raffreddore, seguito a breve distanza da Cunningham ed Eisele. Ciò nonostante fu programmata l'esecuzione di un programma di test alquanto vasto (si trattava in fondo della prima missione di un nuovo tipo di veicolo spaziale) che causò non poche polemiche e fu oggetto di forti divergenze tra direzione di volo ed equipaggio. Il fatto che la secrezione nasale non colasse verso il basso autonomamente a causa dell'assenza di gravità obbligava gli astronauti a pulirsi il naso continuamente. Pertanto, con largo anticipo sulla data di rientro della missione, gli astronauti iniziarono ad insistere sul fatto di voler eseguire la manovra di rientro senza indossare gli appositi guanti ed il casco della tuta spaziale. Motivarono tale insistenza con la paura che l'enorme pressione che viene a crearsi durante questa fase avrebbe potuto causare lo scoppio dei loro timpani. La NASA dovette dunque valutare accuratamente i rischi di una tale decisione. Solo dopo lunga ed accurata discussione la direzione del volo si piegò alla pressione degli astronauti e consentì di svolgere la manovra accogliendo la richiesta. Dopo 10 giorni di volo gli astronauti accesero i retrorazzi frenanti per 12 secondi. Quattro minuti dopo il modulo di servizio venne staccato dal modulo di comando. Durante la fase di rientro nell'atmosfera terrestre gli astronauti dovettero sopportare una decelerazione fino a 3,3 G. Durante gli ultimi sei minuti la discesa venne frenata da appositi paracadute. La missione dell'Apollo 7 non fu solamente la dimostrazione dell'idoneità di volo della navicella spaziale, ma anche di tutte le procedure collegate, come l'assemblaggio del razzo vettore, i preparativi di lancio e la direzione di volo. Fu dunque il primo passo nella giusta direzione per riuscire nell'intento di portare l'uomo sulla Luna. Fino alla fine del decennio, cioè per mantenere la promessa fatta dal Presidente Kennedy, il tempo rimasto a disposizione era di soli 14 mesi. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  8-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo8">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 8</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-103</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-103</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-503</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center LC 39</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>21 dicembre 1968</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>27 dicembre 1968</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/8/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 8 fu la seconda missione con equipaggio del Programma Apollo ad essere lanciata, la prima a raggiungere la Luna, ma con i soli moduli di comando e di servizio, senza impiegare il LEM. La prima volta in cui degli esseri umani arrivarono nei pressi del nostro satellite. </p>
+            <p id="modal_titolo">Lancio e volo verso la Luna</p>
+            <p id="modal_testo">Il lancio avvenne il 21 dicembre 1968 alle ore 12.51 UTC dalla rampa di lancio completamente nuova numero 39A del John F. Kennedy Space Center. Durante questo primo lancio di un equipaggio con un razzo Saturn V, il massimo della spinta venne raggiunto poco prima dell'esaurimento del secondo stadio, raggiungendo 4 g. Dopo soli 11 minuti, l'Apollo 8 aveva raggiunto l'orbita intorno alla Terra. Durante le due orbite di parcheggio intorno alla Terra vennero eseguiti tutti i test di controllo dei sistemi prima che il terzo stadio venisse acceso per la seconda volta per una durata di circa 5 minuti. Ora l'Apollo 8 si trovava in direzione della Luna. Per motivi di sicurezza venne comunque scelta e calcolata una traiettoria tale che, in caso di malfunzionamento o disfunzione totale dei congegni propulsori, la navicella sarebbe volata intorno alla Luna e ritornata autonomamente verso la Terra. La mattina della Vigilia di Natale (24 dicembre) la navicella spaziale raggiunse l'orbita lunare. Durante le successive 20 ore la navicella Apollo girò intorno alla Luna per dieci volte. In parte tale missione venne trasmessa in diretta televisiva durante la quale gli astronauti lessero il racconto della creazione del mondo, cioè le prime parole della Bibbia dal libro della Genesi. Vennero scattate numerose immagini fotografiche ad alta risoluzione della superficie lunare ed in particolare di possibili punti d'allunaggio. La traiettoria di volo fu scelta tale da sorvolare pure il Mare della Tranquillità, già precedentemente scelto per essere punto dell'allunaggio dell'Apollo 11. L'altezza minima alla quale gli astronauti sorvolarono la Luna fu di 111 km. Durante ogni orbita intorno alla Luna, la capsula rimase per circa 30 minuti sul retro della stessa, cioè su quella parte che dalla Terra non risulta visibile. Gli astronauti furono dunque i primi esseri umani a poter osservare direttamente tale faccia nascosta (spesso impropriamente denominata "faccia oscura"). </p>
+            <p id="modal_titolo">Ritorno ed atterraggio</p>
+            <p id="modal_testo">Dopo 20 ore nell'orbita lunare, la capsula dell'Apollo accese il suo congegno propulsore per tre minuti e modificò con tale manovra la sua traiettoria nuovamente in direzione della Terra. Durante la fase di rientro nell'atmosfera terrestre gli astronauti dovettero sopportare una decelerazione massima di 6,8 g. L'atterraggio in mare avvenne all'alba del 27 dicembre 1968, per la precisione alle ore 15.51 UTC. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  9-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo9">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 9</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-104</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-104</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-504</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center (rampa 39A)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>3 marzo 1969</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>13 marzo 1969</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/9/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 9 fu una missione di volo nello spazio nell'ambito del programma Apollo. Obiettivo di questa missione fu il test del modulo lunare in condizioni reali, cioe' nell'orbita terrestre. Durante la missione vennero eseguite la manovra rendezvous nonche' di aggancio tra modulo di comando e modulo lunare. </p>
+            <p id="modal_titolo">Il lancio</p>
+            <p id="modal_testo">Il razzo Saturn V venne lanciato da Cape Canaveral, Florida il 3 marzo 1969 alle ore 16:00 UTC. Per semplificare la comunicazione venne usata per la prima volta un codice identificativo per la capsula e per il modulo lunare: Gumdrop per il modulo di comando mentre per il modulo lunare venne scelto il nome di Spider. Entrambe le denominazioni si riferivano alla forma dei rispettivi veicoli che assomigliavano ad una caramella di gomma e ad un ragno. Con cio' venne ripresa una tradizione interrotta con la missione di Gemini 3, cioe' che gli astronauti potessero scegliere un nome per i loro veicoli spaziali. La tradizione infatti era stata interrotta come reazione della NASA che non fu contenta della denominazione Molly Brown dimostrando poca comprensione per il senso dell'umorismo che stava dietro la motivazione di tale scelta. </p>
+            <p id="modal_titolo">Nell'orbita Terrestre</p>
+            <p id="modal_testo">Raggiunta l'orbita terrestre vennero eseguite tutte le manovre previste per l'allunaggio dell'Apollo 11. Durante questa fase il modulo lunare era ancora all'interno del terzo stadio del razzo Saturn, in attesa di essere estratto dall'apposito parcheggio. In punta si trovava l'unita' composta dal modulo di servizio dell'Apollo nonche' dal modulo di comando stesso - chiamato per l'appunto CSM (Comand Service Module). Il CSM si sarebbe dovuto staccare dal terzo stadio del razzo e, dopo aver ruotato di 180 gradi, avrebbe agganciato con la punta il modulo lunare (LM). Da questo momento il veicolo spaziale poteva allontanarsi dal terzo stadio del razzo. A sole tre ore dal lancio la manovra era riuscita con successo. Il terzo giorno di volo prima Schweickart e poco dopo McDivitt passarono dalla capsula dell'Apollo al modulo lunare usando l'apposito tunnel di collegamento. Fu la prima volta nella storia che degli astronauti passavano da un veicolo spaziale all'altro senza dover uscire dagli stessi. A quel punto della missione Schweickart era gia' affetto dalla malattia dello spazio. Con questo termine vengono definiti i problemi di adattamento all'assenza di gravita' che comportano problemi di equilibrio ed un'indisposizione in generale, paragonabile al mal di mare. I problemi dell'astronauta furono tali che il programma della missione dovette essere ridotto. Dovette comunque essere trasmessa la prima diretta televisiva dall'interno del modulo lunare. Infine vennero pure testati i congegni propulsori del modulo lunare: senza staccare i due veicoli spaziali vennero accesi per sei minuti. Per il giorno successivo, il 6 marzo 1969, erano previste le prime attivita' extraveicolari del programma Apollo. McDivitt e Schweickart passarono per la seconda volta attraverso il tunnel verso il modulo lunare. Schweickart usci' dal modulo lunare attraverso l'apposito abbaino, assicurato tramite una semplice corda di nylon. Quest'attivita' extraveicolare - Extra Vehicular Activity (EVA) - duro' solo 47 minuti anche se originariamente era prevista di oltre due ore. Inoltre era previsto che Schweickart si muovesse fino all'abbaino del modulo di comando dell'Apollo, per simulare in tale maniera il passaggio da un veicolo spaziale verso l'altro nel vuoto dello spazio. Questa azione programmata dovette essere completamente cancellata. </p>
+            <p id="modal_titolo">Ritorno ed atterraggio</p>
+            <p id="modal_testo">Il restante periodo in orbita venne utilizzato per eseguire osservazioni della Terra. L'equipaggio scatto' ben 1.373 immagini fotografiche utilizzabili. A causa del cattivo tempo nella zona prevista per l'atterraggio l'accensione dei retrorazzi frenanti avvenne dopo una ulteriore orbita intorno alla Terra rispetto a quelle originariamente previste. Dieci giorni dopo il lancio, per la precisione il 13 marzo, alle ore 17:00 UTC, Apollo 9 atterro' senza problemi nelle acque dell'Oceano Atlantico e venne recuperato dalla portaerei USS Guadalcanal. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  10-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo10">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 10</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-106</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-106</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-505</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center LC 39</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>18 maggio 1969</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>26 maggio 1969</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/10/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 10 fu la quarta missione con equipaggio del programma Apollo e la prima missione dalla piattaforma di lancio 39B del John F. Kennedy Space Center. La missione includeva il secondo equipaggio ad orbitare intorno alla Luna e il collaudo del modulo lunare in orbita lunare. Vennero eseguite manovre di discesa, di risalita, di rendezvous e d'aggancio. Il modulo arrivo' fino a 15,6 km dalla superficie lunare durante la manovra di pratica. </p>
+            <p id="modal_titolo">Il lancio e l'orbita Lunare</p>
+            <p id="modal_testo">Il lancio del razzo vettore Saturn V da Cape Canaveral, Florida avvenne il 18 maggio 1969 alle 16:49 UTC. Come gia' avvenuto per l'Apollo 8, in un primo momento venne imboccata un'orbita terrestre "di parcheggio". Dopo due orbite intorno alla Terra, il terzo stadio del razzo vettore venne riacceso per portare la capsula dell'Apollo sulla traiettoria verso la Luna. Dopo aver raggiunto l'orbita lunare vennero eseguite tutte le manovre previste per il primo allunaggio vero e proprio nell'ambito della prevista missione Apollo 11. A circa 110 chilometri di altezza sopra la superficie lunare, il modulo di comando dell'Apollo (CSM) venne staccato dal modulo lunare (LM). Inizio' dunque la manovra di discesa del LM, durante la quale il modulo si avvicino' alla superficie lunare fino a circa 15 chilometri di altezza, scattando alcune foto del sito previsto per l'allunaggio dell'Apollo 11. Questa era l'altezza minima sotto la quale non si poteva scendere in quanto non sarebbe piu' stato possibile una manovra di ascesa diretta. Ad un'altezza di 15 chilometri era previsto che lo stadio di discesa del modulo lunare venisse staccato per avviare il procedimento di risalita. Immediatamente dopo il pilotaggio automatico guidato dal computer di bordo si guasto' provocando un forte movimento di avvitamento. Cernan spense il pilotaggio automatico e riposiziono' il modulo lunare correttamente mediante pilotaggio manuale. Pure l'azionamento del congegno propulsore principale dello stadio di ascesa del modulo lunare non riuscÃ¬ al primo tentativo, potÃ© comunque essere eseguito in un secondo momento senza particolari problemi per l'equipaggio. </p>
+            <p id="modal_titolo">L'atterraggio</p>
+            <p id="modal_testo">Durante il rientro nell'atmosfera terrestre, effettuata il 26 maggio, la capsula dell'Apollo raggiunse una velocita' di 39.897 km/h - corrispondente a 11.094 metri al secondo. A tutt'oggi si tratta del record di velocita' raggiunta da un mezzo con equipaggio. Alle ore 16:52 UTC l'Apollo 10 atterro' senza problemi nelle acque dell'Oceano Pacifico. L'equipaggio venne recuperato dalla portaerei USS Princeton. Durante la missione furono trasmesse le prime 19 trasmissioni televisive a colori dallo spazio verso la Terra. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  11-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo11">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 11</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-107</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-107</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-506</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center LC 39</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>16 luglio 1969</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Allunaggio</th>
+                    <td>20 luglio 1969</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>24 luglio 1969</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/11/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">La missione Apollo 11 fu la prima a portare un essere umano sulla superficie della Luna il 20 luglio 1969. Fu anche la quinta missione con equipaggio del programma Apollo. (NASA - USA) </p>
+            <p id="modal_titolo">Il lancio</p>
+            <p id="modal_testo">Apollo 11 e' stato lanciato con successo da un razzo Saturn V partito dal Kennedy Space Center il 16 luglio 1969 alle 09:32:00 ora locale ed entro' nell'orbita 12 minuti dopo.  </p>
+            <p id="modal_titolo">L'allunaggio</p>
+            <p id="modal_testo">Il 20 luglio 1969 il modulo lunare chiamato 'Eagle' venne separato dal modulo di comando, detto "Columbia". Collins rimase a bordo del Columbia, mentre l'Eagle con Armstrong e Aldrin, scendeva sulla superficie. Dopo un attento controllo visivo, Eagle accese il motore e inizio' la discesa. Appena iniziata la manovra di discesa, vari allarmi del computer di "allunaggio" segnalarono un guasto al sistema di guida automatico dovuto all'esaurimento di tutta la memoria del computer. Questo fu causato da un errore dell'equipaggio che attivo' il rendezvous radar, utile in caso di annullamento dell'atterraggio, che saturo' tutta la memoria necessaria per i calcoli del software di allunaggio. L'errore fu prontamente riscontrato e risolto senza conseguenze. Durante questa fase, gli astronauti si accorsero che il sito dell'allunaggio era molto piu' roccioso di quanto avessero indicato le fotografie. Armstrong prese il controllo semi-manuale del modulo lunare, che fece allunare alle 20:17:40 UTC (22:17:40 ora italiana) con ancora 25 secondi di carburante. La NASA considerata la modesta quantita' di carburante rimasta, di gran lunga inferiore rispetto ai precedenti test, aumento' in modo considerevole la quantita' di combustibile disponibile sul LEM per i voli futuri. </p>
+            <p id="modal_titolo">Operazioni sulla superficie</p>
+            <p id="modal_testo">Progettarono la disposizione delle attrezzature per installare l'Early Apollo Scientific Experiment Package (EASEP) e issare la bandiera americana, studiando il sito dell'allunaggio dalle due finestre triangolari dell'Eagle, che permettevano loro di avere una visione di 60°. Secondo il programma, Armstrong e Aldrin dopo aver compiuto tutti i controlli previsti avrebbero dovuto riposare per quattro ore all'interno del modulo lunare, eventualmente aiutati a dormire con dei tranquillanti, poi si sarebbero preparati per l'uscita, programmata per le 6:17 UTC (8:17 italiane). Invece gli astronauti non dormirono. Alle 22:12 UTC (0:12 italiane) Armstrong comunico' la decisione di procedere con la preparazione della prima Attivita' Extraveicolare, invece di riposare, con queste parole: Il nostro consiglio a questo punto e' di programmare l'Attivita' Extraveicolare, con la vostra approvazione, a partire dalle otto di questa sera, ora di Houston. Approssimativamente fra tre ore. Il dottor Berry, il medico che con la telemetria controllava le condizioni di Armstrong, si disse d'accordo, e cosi' pure il direttore di volo Cliff Charlesworth, e da Houston venne dato l'OK. La preparazione per l'uscita anticipata pero' richiese ben piu' delle tre ore previste da Armstrong. L'astronauta ebbe alcune iniziali difficolta' a uscire dello sportello a causa della sua PLSS (Portable Life Support System, la tuta spaziale). Infatti secondo il veterano lunare John Young, a una riprogettazione del LM che prevedeva uno sportello piu' piccolo, non segui' una revisione della PLSS, cosi' si rese difficoltosa l'entrata e l'uscita degli astronauti dallo sportello. Sei ore e mezza dopo aver toccato il suolo, alle 2:57 UTC (4:57 italiane), Armstrong compi' la discesa sulla superficie e fece il suo grande passo per l'umanita'. Aldrin lo segui', e i due astronauti trascorsero 2 ore e 31 minuti a fotografare la superficie lunare e raccogliere campioni di roccia. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  12-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo12">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 12</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-108</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-507</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>14 novembre 1969</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Allunaggio</th>
+                    <td>19 novembre 1969</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>24 novembre 1969</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/12/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 12 fu la sesta missione con equipaggio nell'ambito del Programma Apollo della NASA (USA) e la seconda ad atterrare sulla Luna, dopo Apollo 11. Decollò dal John F. Kennedy Space Center il 14 novembre 1969 alle 16:22 UTC. </p>
+            <p id="modal_titolo">La missione</p>
+            <p id="modal_testo">Subito dopo la partenza da Cape Canaveral, esattamente a 36 secondi e mezzo e a 52 secondi dal lancio il razzo Saturn V venne colpito da un fulmine mentre attraversava l'alta atmosfera. Gli strumenti del Modulo di Comando andarono off-line per alcuni secondi ma l'alimentazione delle celle a combustibile riprese a funzionare regolarmente. Fortunatamente si guastarono solamente 9 sensori di minore importanza e ciò non influenzò la missione in quanto tutto il resto era a posto e funzionava alla perfezione. Il secondo atterraggio lunare di sempre fu molto preciso. La discesa fu automatica, e furono fatte solo piccole correzioni manuali da parte di Conrad. All'allunaggio, avvenuto nell'oceano delle tempeste (Oceanus Procellarum), portò il Modulo Lunare "Intrepid" a piccola distanza (182,88 metri) da un lander (il Surveyor 3) atterrato sulla Luna due anni e mezzo prima dell'Apollo 12. Conrad e Bean presero delle parti del Surveyor 3 e le riportarono sulla Terra per compiere delle analisi. Inoltre i due astronauti fecero due passeggiate lunari di quasi 4 ore ciascuna. Collezionarono molte rocce lunari e misero a punto degli esperimenti scientifici sulla sismicità lunare, sul flusso del vento solare e sul campo magnetico. Intanto Gordon, a bordo del "Yankee Clipper" in orbita lunare, fece delle fotografie multispettrali della superficie lunare. L'equipaggio, poi, rimase un giorno supplementare in orbita, per scattare altre fotografie. Quando il Modulo Lunare accese i motori per riportare Bean e Conrad sul Modulo di Comando in orbita e farli ricongiungere con Gordon, i sismografi lasciati dai due astronauti registrarono scosse per più di un'ora. A differenza dell'Apollo 11, che compì un atterraggio quasi imbarazzante per quanto riguarda la precisione dell'area di allunaggio prevista, Apollo 12 riuscì nell'impresa di fare un atterraggio molto preciso e, come detto, vicino alla sonda Surveyor 3, arrivata sulla Luna nell'aprile del 1967. Per migliorare la qualità delle immagini televisive della Luna, a bordo dell'Apollo 12 fu trasportata una telecamera a colori (anziché quella monocromatica che aveva avuto in dotazione l'Apollo 11). Sfortunatamente, quando Bean trasferì la telecamera nel luogo dove doveva essere installata (vicino al Modulo Lunare) inavvertitamente la puntò contro la luce diretta del Sole, distruggendone la superficie sensibile del tubo Vidicon. Così la copertura televisiva di questo evento venne interrotta quasi subito. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  13-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo13">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 13</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-109</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-109</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-508</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>11 aprile 1970</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>17 aprile 1970</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/13/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 13 è stata una missione spaziale statunitense, parte del programma Apollo. Doveva essere la terza missione a sbarcare sulla Luna dopo quelle di Apollo 11 e Apollo 12, ma è diventata celebre per il guasto che impedì l'allunaggio e rese difficoltoso il rientro sulla Terra. </p>
+            <p id="modal_titolo">Il lancio</p>
+            <p id="modal_testo">Il lancio dell'Apollo 13 avvenne da Cape Canaveral, Florida l'11 aprile 1970, alle ore 19:13:00 GMT utilizzando il vettore Saturn V. Già durante il funzionamento del secondo stadio ci fu un primo incidente, meno famoso, ma ugualmente pericoloso. Uno dei 5 motori (chiamati J2), quello centrale, ebbe problemi a causa delle oscillazioni pogo. Fortunatamente il computer spense il motore prima che causasse altri danni. Inoltre la direzione di volo decise di far funzionare i rimanenti quattro motori per un periodo più prolungato del previsto. Pure il motore del terzo stadio del razzo vettore (sempre J2) venne fatto bruciare più a lungo e nonostante il problema predetto, la deviazione dalla traiettoria dell'orbita prevista fu minima ed ininfluente per il proseguimento della missione. Dopo 1,5 orbite intorno alla Terra venne riacceso il propulsore del terzo stadio del razzo vettore per portare Apollo 13 in direzione verso la Luna. </p>
+            <p id="modal_titolo">Il problema</p>
+            <p id="modal_testo">Dopo 55 ore dal lancio della missione venne trasmesso il messaggio radiofonico dell'equipaggio al Mission Control, che letteralmente fu "OK, Houston, abbiamo avuto un problema". A 321.860 chilometri dalla Terra, uno dei quattro serbatoi dell'ossigeno del Modulo di Comando e Servizio (CSM) esplose. Di conseguenza l'equipaggio fu costretto ad annullare l'allunaggio, girare attorno alla Luna e prendere la spinta necessaria per tornare sulla Terra. Poiché il Modulo di Servizio era rimasto seriamente danneggiato dall'esplosione, i tre astronauti furono costretti a trasferirsi nel Modulo Lunare "Aquarius", utilizzandolo come navicella per il ritorno anziché come mezzo per atterrare sulla Luna. Il ritorno, durato quattro giorni, fu freddo, scomodo e teso. Ma la missione Apollo 13 è servita per dimostrare la capacità del programma di affrontare situazioni di crisi imprevedibili, portando in salvo tutto l'equipaggio. Mentre la navicella era in rotta verso la Luna, il serbatoio dell'ossigeno numero 2 del Modulo di Servizio esplose dopo la richiesta del Controllo Missione, fatta all'equipaggio, di miscelare l'ossigeno per impedirne la stratificazione. All'apertura dell'alimentazione, i cavi che collegavano il motore al miscelatore interferirono creando una scintilla. Il fuoco causò un aumento di pressione sopra il massimo consentito di 7 MPa nel serbatoio, che esplose danneggiando diverse parti del Modulo di Servizio, incluso il serbatoio dell'ossigeno numero 1. All'epoca del fatto, però, la causa non fu subito chiara e ci fu chi ipotizzò l'impatto con un meteorite. A causa della perdita di entrambi i serbatoi dell'ossigeno del Modulo di Servizio, e considerata la quantità di ossigeno richiesta dalle apparecchiature della navicella Apollo, sarebbe stato impossibile atterrare sulla Luna; fu scelto di eseguire un passaggio attorno alla Luna e di riprendere la rotta verso la Terra. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  14-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo14">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 14</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-110</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-110</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-509</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>Kennedy Space Center LC 39A</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>31 gennaio 1971</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Allunaggio</th>
+                    <td>5 febbraio 1971</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>9 febbraio 1971</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/14/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 14 fu l'ottava missione del Programma Apollo con equipaggio; la terza missione ad allunare. </p>
+            <p id="modal_titolo">Lancio e volo verso la Luna</p>
+            <p id="modal_testo">Il lancio di Apollo 14 verso la Luna avvenne il 31 gennaio 1971 alle ore 16:03 (ora locale 21:03 GMT) da Cape Canaveral, Florida. Il tempo durante il giorno previsto per il lancio era pessimo e poco prima del lancio il conto al rovescio (countdown) venne interrotto per consentire che un forte temporale potesse scaricarsi. Apollo 12 era stato colpito da un fulmine durante la fase di lancio e ciò aveva provocato il malfunzionamento di diversi sistemi. Non si voleva dunque correre tale rischio per una seconda volta - anche in considerazione degli enormi problemi causati ed intervenuti durante la missione precedente Apollo 13. Come per tutte le altre missioni del programma Apollo si procedeva a raggiungere un'orbita terrestre per in seguito provvedere ad un ulteriore accensione del terzo stadio del razzo e lanciare così la navicella spaziale verso la Luna. Il tutto procedette senza problemi. Enormi problemi causò invece l'allacciamento del modulo di comando "Kitty Hawk" al modulo lunare "Antares". Come sempre un momento molto delicato della missione, durante il quale il modulo lunare doveva essere estratto dal suo "parcheggio" all'interno del razzo. Furono necessari ben sei tentativi per riuscire in tale manovra. </p>
+            <p id="modal_titolo">Sulla Luna</p>
+            <p id="modal_testo">Meta della missione era l'altopiano di Fra-Mauro, meta originaria di Apollo 13. Superati ulteriori problemi con l'elettronica di bordo del modulo lunare Antares, gli astronauti poterono finalmente provvedere ad un ampio programma scientifico. La prima attività fuori bordo (EVA) ebbe la durata di 5 ore e 3 minuti. Durante questa gli astronauti furono impegnati per la maggior parte del tempo con l'installazione dei citati esperimenti e strumenti. La seconda escursione ebbe come mèta il raggiungimento del perimetro superiore del cratere Cone, caratterizzato da un diametro di circa 300 metri ed una profondità di 40. Da detto perimetro dovevano prelevare diversi campioni di roccia lunare. Gli astronauti non furono comunque in grado di raggiungere la mèta. Per la prima volta veniva infatti utilizzato il "Modular Equipment Transporter" (MET); fu un vero e proprio fallimento, in quanto non fu quasi possibile muovere il veicolo che sprofondava continuamente nella polvere lunare. Questo costò molto più tempo del previsto, oltre ad un maggior consumo di ossigeno rispetto a quanto inizialmente stimato. Un fatto non da sottovalutare fu che i due astronauti persero l'orientamento sulla Luna. L'attività fuori bordo durò 4 ore e 23 minuti, però la distanza percorsa dagli astronauti era di oltre 3 chilometri. Ciò nonostante gli astronauti non persero il loro buon umore concludendo detta EVA con un'azione spettacolare: Shepard tirò fuori due palline da golf e le lanciò, utilizzando una piccola asta, per diverse centinaia di metri. Lui stesso lo commentò con "Miles and miles and miles". Così Shepard, oltre ad essere il primo americano nello spazio, ebbe pure il primato di essere il primo giocatore di golf sulla Luna. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  15-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo15">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 15</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-112</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-112</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-510</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>Kennedy Space Center LC 39A</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>26 luglio 1971</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Allunaggio</th>
+                    <td> 	30 luglio 1971</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>7 agosto 1971</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/15/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 15 fu la nona missione con equipaggio del Programma Apollo e la quarta ad allunare. </p>
+            <p id="modal_titolo">Lancio e volo verso la Luna</p>
+            <p id="modal_testo">Il razzo Saturn V con il numero AS-510 venne lanciato il 26 luglio 1971 alle ore 13:34 UTC da Cape Canaveral, Florida e raggiunse dopo 12 minuti l'orbita terrestre. Compiute due orbite complete, venne riacceso il terzo stadio del razzo per portare Apollo 15 in direzione Luna. </p>
+            <p id="modal_titolo">Sulla Luna</p>
+            <p id="modal_testo">La prima attività fuori bordo (EVA) degli astronauti Scott e Irwin fu terminata dopo soli 33 minuti. Si trattò di una cosiddetta Stand-up EVA, o come veniva chiamata dagli astronauti stessi, di una Sightseeing Tour – cioè di mera visualizzazione dell'area di atterraggio. Durante la fase di assemblaggio del rover lunare, Scott dovette constatare che lo sterzo anteriore era difettoso. Dato che il veicolo era dotato pure di uno sterzo posteriore, il rover poté comunque essere utilizzato. Gli astronauti si diressero verso un punto marcante del ruscello di Hadley, il così detto "gomito". Si trattava di un dirupo con una larghezza di 1 km per una profondità massima di 300 m. Valle di chiara origine vulcanica e pertanto ideale per montare gli strumenti ALSEP (Apollo Lunar Surface Experiments Package). Ovviamente il viaggio verso la valle fu particolarmente movimentato. Con solo un sesto di forza di gravità in confronto di quella sulla Terra, il veicolo provocò diversi salti ed in parte ebbe contatto con il suolo lunare per più volte su di una sola ruota. Una curiosità: durante tale missione furono pronunciate le uniche parole italiane sulla Luna. Scott, infatti, sorpreso dalla particolare lucentezza di una roccia, urlò le parole: "Mamma mia!". L'attività fuori bordo durò 6 ore e 32 minuti. La seconda EVA fu con 7 ore e 12 minuti quella più lunga. Questa portò gli astronauti fino al Mount Hadley che si trova a circa 5 km di distanza dal punto di allunaggio. Un trapano decisamente migliorato in confronto a quelli delle precedenti missioni, consentì di prelevare dei campioni di roccia da oltre due metri di profondità. La terza EVA portò gli astronauti per la seconda volta verso la valle Hadley. L'equipaggio terminò tale escursione dopo 4 ore e 49 minuti. Durante le ultime fasi di questa EVA, ci fu una breve commemorazione in onore degli astronauti deceduti e venne lasciata sul suolo lunare una statuetta di metallo denominata Fallen Astronaut. </p>
+            <p id="modal_titolo">Ritorno ed atterraggio</p>
+            <p id="modal_testo">Prima di lasciare l'orbita, gli astronauti prelevavano un piccolo satellite dalla SIM Bay del modulo di comando per lasciarlo girare intorno alla Luna. Compito del satellite fu di registrare dati sui campi magnetici e di gravitazione della Luna. Il viaggio di ritorno avvenne senza problemi. Alfred Worden lasciò il modulo di comando per un ulteriore EVA di 38 minuti per recuperare materiale fotografico dal Endeavour. Fu la prima attività fuori bordo su di un modulo di comando dopo Apollo 9. Il 7 agosto 1971, alle ore 20:45 UTC, Apollo 15 atterrò nell'Oceano Pacifico. Nonostante la mancata apertura di un paracadute, non ci furono problemi e l'equipaggio poté essere recuperato dalla portaerei USS Okinawa. La missione portò ben 76,8 kg di pietre lunari sulla Terra. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  16-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo16">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 16</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-113</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-113</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-511</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>16 aprile 1972</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Allunaggio</th>
+                    <td>21 aprile 1972</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>27 aprile 1972</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/16/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 16 fu la decima missione con equipaggio umano del programma Apollo della NASA e la quinta e contemporaneamente la penultima di sempre ad atterrare sulla Luna. Venne conclusa con successo raggiungendo il fine principale della missione che, per l'appunto, fu il quinto allunaggio. </p>
+            <p id="modal_titolo">Lancio e volo verso la Luna</p>
+            <p id="modal_testo">Il lancio avvenne il 16 aprile 1972 alle ore 17:54 UTC dal Launch Complex 39A del John F. Kennedy Space Center di Cape Canaveral, Florida. Tre giorni dopo il lancio, il sistema di navigazione computerizzato smise di funzionare correttamente. La determinazione del posizionamento dovette dunque essere eseguita senza l'ausilio di strumenti altamente sofisticati o tecnici, bensì utilizzando un classico e semplicissimo sestante. Inoltre, poco dopo che il modulo lunare "Orion" si era staccato dal modulo di comando "Casper" dovette essere registrato un malfunzionamento del sistema di propulsione principale del CSM (modulo di comando-servizio), tanto che dovette essere preso in considerazione l'annullamento dell'allunaggio. Il centro di controllo comunque fu in grado di simulare tale scenario e scoprì che la deviazione dalla traiettoria prevista per l'orbita lunare era rimasta nell'ambito del controllabile; pertanto la missione poteva continuare come da programma. </p>
+            <p id="modal_titolo">Sulla Luna</p>
+            <p id="modal_testo">La meta della missione fu la regione dell'altopiano Descartes, che venne raggiunta il 21 aprile alle 02:23:35 UTC, cioè con oltre cinque ore di ritardo sul piano di volo. L'atterraggio sulla superficie lunare per la prima volta non poté essere trasmesso in diretta televisiva, dato che la stazione trasmittente del modulo lunare si era guastata. Solo dopo che fu montato il trasmettitore del rover lunare, si poté iniziare a trasmettere le prime immagini dei lavori sulla Luna eseguiti durante questa missione. Si pensava che fosse una regione vulcanica, ma questo fu escluso dalle scoperte degli astronauti. Per la prima volta vennero inoltre scattate delle immagini astronomiche mediante una camera a raggi UV (spettrografo). La pellicola fotografica venne comunque appena sviluppata ed analizzata sulla Terra. Vennero eseguite tre EVA di durata prolungata. La prima fu caratterizzata dall'installazione degli esperimenti di carattere scientifico, come sempre effettuata entro un breve raggio dal posto di allunaggio. Venne comunque eseguito il primo breve viaggio con il rover lunare, per la precisione verso i crateri Flag e Ray. L'EVA durò 7 ore e 11 minuti. La distanza percorsa misurò comunque 4,2 chilometri. La seconda EVA portò verso i crateri Cinco, Stubby e Wreck. Durante questa escursione venne utilizzato un nuovissimo trapano, in grado di estrarre una prova del suolo lunare da una profondità di tre metri. L'attività extraveicolare durò 7 ore e 23 minuti, cioè poco più della prima. La distanza percorsa invece misurò 11 chilometri. La terza attività extraveicolare, che portò l'equipaggio verso il cratere North Ray, durò solo 5 ore e 40 minuti. Anche in questo caso venne percorsa una distanza di 11,4 chilometri. </p>
+            <p id="modal_titolo">Ritorno ed atterraggio</p>
+            <p id="modal_testo">Durante la fase di rientro nell'atmosfera terrestre, gli astronauti dovettero sopportare una decelerazione che raggiunse 7,19 g, il valore massimo raggiunto e misurato durante tutte le missioni del programma Apollo. Il 27 aprile 1972 alle ore 19:45, l'Apollo 16 ammarò nelle acque dell'Oceano Pacifico. L'equipaggio venne recuperato dalla portaerei USS Ticonderoga. In totale verrero raccolti 95,8 kg di rocce lunari. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  17-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo17">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 17</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/17/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 17 è stata l'undicesima e ultima missione con equipaggio umano del programma spaziale americano Apollo da parte della NASA. Il lancio del vettore Saturn V avvenne a Cape Canaveral il 7 dicembre 1972 alle 05:33:00 UTC con a bordo il Comandante Eugene Cernan, il pilota del Modulo di Comando Ron Evans e il pilota del Modulo Lunare Apollo Harrison Schmitt. Si tratta del più recente volo umano oltre l'orbita terrestre bassa e il primo lancio notturno di tutto il programma. Lo stesso Cernan rimane tuttora l'ultimo uomo ad aver messo piede sul suolo lunare. L'Apollo 17 fu anche la terza missione di tipo J caratterizzata da un'intensa indagine scientifica della Luna sia dalla superficie sia dall'orbita lunare. Nonostante la somiglianza alle precedenti missioni Apollo 15 e 16, gli obiettivi e gli esperimenti caratterizzano questa missione unica rispetto alle altre. Mentre Evans rimase in orbita lunare a bordo del Modulo di Comando, Cernan e Schmitt si fermarono poco più di tre giorni sulla superficie lunare nella valle di Taurus-Littrow, conducendo tre periodi di attività extraveicolare, occupati nella raccolta di campioni lunari e nell'impiego di strumenti scientifici. Cernan, Evans e Schmitt rientrarono il 19 dicembre dopo una missione di circa 12 giorni. La decisione di allunare nella valle di Taurus-Littrow è stata considerata come uno degli obiettivi primari della missione: analizzare materiale lunare dell'altopiano più vecchio dall'impatto che ha formato il Mare Imbrium e valutando le possibilità di un'attività vulcanica nelle vicinanze. La valle inoltre offriva una migliore copertura orbitale ed un efficiente utilizzo del rover lunare. La missione supera anche vari record stabiliti dai voli precedenti, tra cui la più lunga permanenza sul suolo lunare, il tempo totale attività extraveicolare lunare, la più alta quantità di campioni raccolti, e il più lungo soggiorno in orbita lunare.</p>
+            <p id="modal_titolo">Sulla Luna</p>
+            <p id="modal_testo">Cernan e Schmitt allunarono con il modulo lunare "Challenger" alle ore 06:50:20.8 UTC del 11 dicembre 1972 nei pressi del cratere Littrow dell'omonima valle Taurus-Littrow nel Mare Serenitatis. La missione prevedeva l'esecuzione di tre EVA. Come sempre, la prima prevedeva l'installazione dell'"Apollo lunar surface experiment package" (ALSEP) nelle vicinanze del sito di allunaggio. Ad una distanza maggiore vennero montati ulteriori strumenti. Inoltre venne assemblato l'ormai collaudato Lunar Roving Vehicle che, al contrario delle precedenti missioni, non creò dei problemi con la guida rivelandosi finalmente privo di difetti. Durante questa prima escursione, che durò 7 ore ed 11 minuti, vennero raccolti 14,3 kg di rocce lunari. Il giorno successivo, l'equipaggio condusse un'escursione verso diversi crateri, tra i quali il cratere Shorty, dove Schmitt raccolse delle palline di colore arancione composte da un materiale simile al vetro. Dopo 7 ore e 36 minuti l'EVA fu terminata. Gli astronauti prelevarono 34,1 kg di rocce lunari. L'ultima attività extraveicolare, durante la quale vennero raccolti circa 62 chilogrammi di rocce lunari e campioni del suolo estratti da un apposito trapano, portò l'equipaggio nuovamente verso diversi crateri. L'escursione durò nuovamente 7 ore e 15 minuti. In totale, l'equipaggio aveva percorso con il suo rover 33,80 km attraverso la valle Taurus-Littrow e raccolto ben 110,4 kg di roccia lunare. Avevano scalato più crateri, nonché la montagna Taurus. Con una permanenza di 3 giorni e 3 ore fu inoltre la missione che permase più a lungo sulla superficie lunare di tutto il programma Apollo. Se l'ultimo uomo a mettere piede sulla Luna era stato il geologo Harrison Schmitt, Eugene Cernan è per il momento l'ultimo ad averla lasciata. Erano le ore 05:40 UTC del 14 dicembre 1972. </p>
+            <p id="modal_titolo">Ritorno ed atterraggio</p>
+            <p id="modal_testo">Dopo che Cernan e Schmitt furono nuovamente a bordo del modulo di comando, il modulo lunare venne fatto precipitare sulla Luna in maniera controllata. L'impatto avvenne a circa 10 chilometri dal punto di allunaggio della missione. Il conseguente terremoto lunare venne registrato anche dai sismografi installati vicino ai punti d'allunaggio delle quattro missioni Apollo precedenti. Inoltre, durante il viaggio di ritorno, vennero fatte esplodere a distanza le cariche esplosive posizionate durante le attività extraveicolari per creare ulteriori terremoti lunari. Anche durante questo viaggio di ritorno fu prevista l'EVA per recuperare le pellicole dagli appositi contenitori. L'astronauta Evans eseguì tale lavoro rimanendo per 66 minuti all'esterno dell'America. Il 19 dicembre 1972 alle ore 19:24 UTC, avvenne l'ammaraggio dell'Apollo 17 nelle acque dell'Oceano Pacifico. L'equipaggio venne recuperato dalla portaerei USS Ticonderoga, già nave di recupero dell'Apollo 16. Con questa missione era terminato il programma lunare americano. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  4-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo4">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 7</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-017</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-017</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-501</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center LC 39A</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>9 novembre 1967</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>9 novembre 1967</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/4/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">La missione Apollo 4 fu la prima che utilizzò il razzo Saturn V. Non aveva equipaggio e fu la seconda missione del programma Apollo (considerando come prima missione l’Apollo 1) </p>
+            <p id="modal_titolo">La missione</p>
+            <p id="modal_testo">Il lancio avvenne il 9 novembre 1967 e fu il primo test di lancio per il Saturn V, il piu’ grande vettore mai costruito. La missione Apollo 4 fu anche la prima a partire dal Launch Complex 39 del John F. Kennedy Space Center (la rampa 39 fu costruita apposta per i Saturn V). Inoltre fu la prima volta che la navicella Apollo tentò un rientro in atmosfera con una velocita’ simile a quella che avrebbe avuto se fosse tornata dalla Luna. Data l’importanza di tutti questi test, a bordo del razzo e della navicella c’erano ben 4098 strumenti e sensori che raccolsero dati importanti per le future missioni Apollo. Si trattò del primo volo in cui venne messa alla prova la dottrina di test all-up (tutto insieme): nel 1963, al fine di ridurre il numero di voli di test necessari per dichiarare il Saturn V idoneo al volo con equipaggio, venne deciso che anziché testare ogni singolo componente o stadio separatamente, l’intero razzo sarebbe stato testato nello stesso volo. Tagliare il numero di questi voli era fondamentale per realizzare l’obiettivo dato da Kennedy di allunare entro la fine del decennio; ovviamente significava anche che tutto doveva funzionare al primo colpo. Dopo un periodo di preparazione e di test durati 2 mesi, il razzo fu finalmente pronto per il decollo. Al momento del decollo i cinque motori F-1 produssero un rumore fortissimo nei dintorni del Kennedy Space Center. Sebbene l’LC-39 fosse a quasi 4 miglia (quasi 6,5 km) dal Vehicle Assembly Building e dalle cabine stampa lì accanto, come misura di protezione da eventuali esplosioni, l’onda d’urto fu così forte che le cabine subirono dei danni: Walter Cronkite all’interno della cabina della CBS venne colpito da parti del soffitto. Per i voli successivi la NASA costruì un sistema di soppressione del suono che pompava migliaia di litri di acqua nello spazio immediatamente sottostante il razzo (la flame trench); un sistema molto simile e’ in uso ancora oggi per i lanci dello Shuttle. Il rientro si svolse in maniera regolare, la temperatura nella cabina aumentò di soli 12 °C, e lo scudo termico funzionò perfettamente. La nave USS Bennington completò le operazioni di recupero in circa due ore: oltre alla capsula venne recuperato per la prima volta anche uno dei paracadute principali (per verificarne le condizioni). Tutti gli obiettivi della missione furono completati con successo: un altro passo avanti. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  5-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo5">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 5</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn IB SA-204</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center LC 37B</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>22 gennaio 1968</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>23 gennaio 1968</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/5/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">L'Apollo 5 fu una missione spaziale americana facente parte del Programma Apollo. In particolare fu la prima con a bordo il Modulo Lunare (LM o Lem), che sarebbe successivamente servito per far atterrare l'uomo sulla Luna. L'Apollo 5, come l'Apollo 4 non aveva equipaggio, ma servì a testare il LM, e in particolare il suo sistema propulsivo. Il motore di discesa del LM fu il primo razzo a potenza regolabile usato nello spazio. </p>
+            <p id="modal_titolo">Il volo</p>
+            <p id="modal_testo">Il razzo vettore dell'Apollo 5 fu un Saturn IB, più piccolo di un Saturn V, ma comunque in grado di trasportare la navetta Apollo in orbita terrestre. Il Saturn IB AS-204 utilizzato in questa missione era quello inizialmente destinato all'Apollo 1. Poiché rimase indenne dall'incendio che costò la vita ai tre astronauti dell'Apollo 1, fu deciso di riutilizzarlo. Il modulo lunare a bordo difettava di due grosse caratteristiche per andare sulla Luna: non aveva finestre trasparenti e nemmeno l'impianto per atterrare. Questo fu deciso per poter accorciare i tempi di consegna. Il modulo lunare dell'Apollo 5 non aveva bisogno di queste caratteristiche, dato che doveva solo entrare in orbita e non aveva equipaggio. Finalmente il 22 gennaio 1968, con circa otto mesi di ritardo sulla data pianificata, l'Apollo 5 si alzò poco prima del tramonto. Il Saturn IB funzionò perfettamente e portò il secondo stadio con il LM in un'orbita di 163 x 222 km. Il modulo lunare si separò dal razzo 45 minuti dopo, compì due orbite e accese i motori di discesa, che rimasero accesi per soli 4 secondi anziché i 39 programmati. L'accensione era destinata a simulare il rallentamento per la discesa verso la superficie lunare, ma venne prematuramente interrotta a causa della programmazione eccessivamente prudente del software di volo. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APOLLO  6-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="apollo6">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Apollo 6</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid" id="container_apollo">
+          <div class="row">
+            <div class="col-md-7" id="riga_1_sinistra">
+              <table class="table table-sm">
+                <tbody>
+                  <tr>
+                    <th scope="row">Modulo di comando</th>
+                    <td>CM-020</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Modulo di servizio</th>
+                    <td>SM-014</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vettore</th>
+                    <td>Saturn V SA-502</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Luogo lancio</th>
+                    <td>John F. Kennedy Space Center LC 39A</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lancio</th>
+                    <td>4 aprile 1968</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ammaraggio</th>
+                    <td>4 aprile 1968</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-5" id="riga_1_destra">
+              <img src="apollo/6/stemma.png" id="img_stemma">
+            </div>
+          </div>
+          <br>
+            <p id="modal_testo">Apollo 6, lanciato nell'aprile 1968, fu il secondo e ultimo test di volo privo di equipaggio del veicolo di lancio Saturn V. </p>
+            <p id="modal_titolo">Il lancio</p>
+            <p id="modal_testo">Diversamente dal perfetto volo dell'Apollo 4, l'Apollo 6 presentò diversi problemi proprio dall'inizio. Dopo due minuti di volo, il razzo subì dure oscillazioni pogo per circa 30 secondi. George Mueller spiegò la causa ad una conferenza del congresso: Le oscillazioni pogo si presentano fondamentalmente perché avvengono fluttuazioni di spinta nei motori. Questi sono normali caratteristiche dei motori. Tutti i motori hanno quello che potete chiamare rumore nella loro potenza erogata poiché la combustione non è perfettamente uniforme, così si hanno queste fluttuazioni di spinta del primo stadio come normale caratteristica di tutti i motori. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script>
+    $(function() {
+      var topoffset = 0; //variable for menu height
+
+      //Use smooth scrolling when clicking on navigation
+      $('.navbar-nav a').click(function() {
+        if (location.pathname.replace(/^\//,'') ===
+          this.pathname.replace(/^\//,'') &&
+          location.hostname === this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top-topoffset
+            }, 500);
+            return false;
+          } //target.length
+        } //click function
+      }); //smooth scrolling
+
+    });
+
+    $(function() {
+      var topoffset = 0; //variable for menu height
+
+      //Use smooth scrolling when clicking on navigation
+      $('.carousel-indicators a').click(function() {
+        if (location.pathname.replace(/^\//,'') ===
+          this.pathname.replace(/^\//,'') &&
+          location.hostname === this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top-topoffset
+            }, 500);
+            return false;
+          } //target.length
+        } //click function
+      }); //smooth scrolling
+
+    });
+
+    $('body').scrollspy({ target: '#menu' })
+  </script>
+
+</body>
+</html>
